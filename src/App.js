@@ -17,7 +17,7 @@ function App() {
 
   const [data, setData] = useState(false);
 
-  const { logindata, setLoginData } = useContext(LoginContext);
+  const { setLoginData } = useContext(LoginContext);
 
   const history = useNavigate();
 
@@ -49,7 +49,7 @@ function App() {
       setData(true)
     },2000)
 
-  }, [])
+  })
 
   return (
     <>

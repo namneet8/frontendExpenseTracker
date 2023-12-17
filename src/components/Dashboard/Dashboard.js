@@ -9,9 +9,9 @@ import './dashboard.css';
 
 const Dashboard = () => {
 
-    const { logindata, setLoginData } = useContext(LoginContext);
+    const {  setLoginData } = useContext(LoginContext);
 
-    const [data, setData] = useState(false);
+    const [ setData] = useState(false);
 
 
     const history = useNavigate();
@@ -45,13 +45,13 @@ const Dashboard = () => {
             setData(true)
         }, 2000)
 
-    }, [])
-    const {totalExpenses,incomes, expenses, totalIncome, totalBalance, getIncomes, getExpenses } = useGlobalContext()
+    })
+    const {totalExpenses, totalIncome, totalBalance, getIncomes, getExpenses } = useGlobalContext()
 
     useEffect(() => {
         getIncomes()
         getExpenses()
-    }, [])
+    })
 
     return (
         <>

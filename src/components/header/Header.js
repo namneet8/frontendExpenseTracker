@@ -53,9 +53,7 @@ const Header = () => {
         history("/dash")
     }
 
-    const goError = () => {
-        history("*")
-    }
+    
     const goRegister = () => {
         history("/register")
     }
