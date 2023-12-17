@@ -1,0 +1,15 @@
+.hisContainer{
+    padding: 1rem;
+}
+.history-item{
+        background-color: white;
+        box-shadow: 0px 1px 15px rgba(139, 89, 89, 0.06);
+        padding: 1rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+       
+        margin-left: 0;
+    }
